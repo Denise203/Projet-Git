@@ -1,0 +1,23 @@
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: $buttonColor ;
+    border: 1px solid $brown;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: $white;
+    text-decoration: none;
+     img{
+        border: 0;
+    }
+}
+
+/*.bouton_rouge img
+{
+    border: 0;
+}*/

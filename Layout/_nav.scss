@@ -1,0 +1,43 @@
+nav{
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .image{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-top: -5px;
+        border-radius: 50%;
+        background-color: $imageBackground;
+        box-shadow:1px 1px 2px 1px $imageShadow;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+    li{
+        margin-right: 15px;
+       
+        &:hover{
+            color: rgb(71, 57, 144);
+        }
+    }
+    a{
+        font-size: 1.3em;
+        color: $dark-red;
+        padding-bottom: 3px;
+        text-decoration: none;
+        &:hover{
+            color: $brown ;
+            border-bottom: 3px solid $brown; 
+        }
+    }
+}
+
+/*nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}*/

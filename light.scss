@@ -1,0 +1,30 @@
+@import "./base/polices";
+@import "./utils/variablesLight";
+@import"./components/baniere";
+@import"./components/bouton";
+@import"./Layout/header";
+@import"./Layout/nav";
+@import"./Layout/footer";
+
+
+/* Eléments principaux de la page */
+
+body
+{
+    background-color: $bodyColor;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: black;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
