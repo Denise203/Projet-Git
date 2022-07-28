@@ -28,3 +28,50 @@ section h1, footer h1, nav a
     font-weight: normal;
     text-transform: uppercase;
 }
+@media all and (max-width: 770px){
+    .menu{
+        display: block;
+        // position: relative;
+        top: 90px;
+        right: 30px;
+        z-index: 100;
+        .ouvrir{
+            display: block;
+
+        }
+        .fermer{
+            display: none;
+        }
+        
+    }
+    .open{
+        .ouvrir{
+            display: none;
+        }
+        .fermer{
+            display: block;
+        }
+    }
+    .nav_links{
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+        background: rgba(255, 228, 196, 0.781);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: .5s ease-in-out;
+        position: absolute;
+        padding-top: 20px;
+        padding-left: -50px;
+        z-index: 2;
+        li{
+            margin-bottom: 40px;
+        }
+    }
+    .open{
+        .nav_links{
+            transform: translateX(0);
+        }
+    }
+}

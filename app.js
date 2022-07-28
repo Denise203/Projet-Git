@@ -18,7 +18,18 @@ function changeTheme(){
 
 
 
-
-// function changeImage(url) {
-//     document.querySelector(".img").src = url;
-// }
+let menu = document.querySelector('.menu')
+let nav = document.querySelector('nav')
+let change = true
+menu.addEventListener('click', function(){
+    switch (change) {
+        case true:
+            nav.classList.add('open')
+            change = false
+            break;
+        default:
+            nav.classList.remove('open')
+            change = true
+            break;
+    }
+})

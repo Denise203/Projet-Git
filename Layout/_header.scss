@@ -1,9 +1,9 @@
 header
 {
     background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    // align-items: flex-end;
     background-color: $headerColor;
      h1{
         font-family: 'BallparkWeiner', serif;
@@ -13,6 +13,7 @@ header
         color: $h1Color;
     }
      h2{
+        margin-left: 20px;
         font-family: Dayrom, serif;
         font-size: 1.1em;
         margin-top: 0px;
@@ -21,16 +22,17 @@ header
     }
 }
 
-#titre_principal
-{
-    display: flex;
-    flex-direction: column;
-}
+// #titre_principal
+// {
+//     // display: flex;
+//     // flex-direction: column;
+// }
 
 #logo
 {
+    margin-left: 20px;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     align-items: baseline;
      img{
         width: 59px;

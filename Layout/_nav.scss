@@ -1,7 +1,12 @@
 nav{
+    float: right;
+    margin-top: -90px;
     ul{
-        list-style-type: none;
+        // list-style-type: none;
         display: flex;
+        li{
+            list-style: none;
+        }
     }
     .image{
         width: 30px;
@@ -17,11 +22,21 @@ nav{
             border-radius: 50%;
         }
     }
+    .menu{
+        position: absolute;
+        margin-top: -60px;
+        // display: none;
+        i{
+            font-size: 40px;
+            color: red;
+        }
+    }
     li{
         margin-right: 15px;
-       
+
         &:hover{
             color: rgb(71, 57, 144);
+           
         }
     }
     a{
@@ -32,6 +47,7 @@ nav{
         &:hover{
             color: $brown ;
             border-bottom: 3px solid $brown; 
+            transition: .5s ease-in-out;
         }
     }
 }

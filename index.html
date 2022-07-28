@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="light.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Zozor - Carnets de voyage</title>
     </head>
     
@@ -17,12 +18,17 @@
                     <h2>Carnets de voyage</h2>
                 </div>
                 
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">CV</a></li>
-                        <li><a href="#">Contact</a></li>
+                <nav class="nav">
+                    <div class="menu">
+                        <i class="fa fa-bars menu__ouvrir ouvrir"></i>
+                        <i class="fa fa-times menu__fermer fermer"></i>
+                        
+                    </div>
+                    <ul class="nav_links">
+                        <li class="nav_link"><a href="#">Accueil</a></li>
+                        <li class="nav_link"><a href="#">Blog</a></li>
+                        <li class="nav_link"><a href="#">CV</a></li>
+                        <li class="nav_link"><a href="#">Contact</a></li>
                         <li class="image" onclick="changeTheme()"><img class="img"  src="images/soleil.png" alt="soleil"></li>
                     </ul>
                 </nav>
